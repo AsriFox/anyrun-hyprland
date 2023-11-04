@@ -1,0 +1,15 @@
+[package]
+name = "anyrun-hyprland"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+abi_stable = "0.11.3"
+anyrun-plugin = { git = "https://github.com/Kirottu/anyrun.git" }
+fuzzy-matcher = "0.3.7"
+hyprland = "0.3.12"
+ron = "0.8.1"
+serde = { version = "1.0.190", features = ["derive"] }
